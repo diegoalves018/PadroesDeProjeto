@@ -2,7 +2,7 @@ package factorymethod;
 
 public class Isosceles extends Triangulo {
 
-	public String getForma() {
+	public String getTipoFigura() {
 		return "Isosceles";
 	}
 

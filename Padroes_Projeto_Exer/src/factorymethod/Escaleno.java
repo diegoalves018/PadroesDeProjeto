@@ -2,7 +2,7 @@ package factorymethod;
 
 public class Escaleno extends Triangulo {
 
-	public String getForma() {
+	public String getTipoFigura() {
 		return "Escaleno";
 	}
 

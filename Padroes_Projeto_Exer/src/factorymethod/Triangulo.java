@@ -7,7 +7,7 @@ public abstract class Triangulo {
 		private double B;
 		private double C;
 		
-		public abstract String getForma();
+		public abstract String getTipoFigura();
 				
 
 		public double getA() {

@@ -2,7 +2,7 @@ package factorymethod;
 
 public class Equilatero extends Triangulo {
 
-	public String getForma() {
+	public String getTipoFigura() {
 		return "Equilatero";		
 	}
 

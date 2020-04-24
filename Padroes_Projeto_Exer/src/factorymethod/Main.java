@@ -18,7 +18,7 @@ public class Main {
 		}
 		
 		Triangulo triangulo = FiguraGeometricaBidimensional.criarTriangulo(ladoA, ladoB, ladoC);
-		System.out.println(triangulo.getForma());
+		System.out.println(triangulo.getTipoFigura());
 		System.out.println(triangulo);
 	}
 	
