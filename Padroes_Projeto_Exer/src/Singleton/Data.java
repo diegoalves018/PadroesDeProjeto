@@ -1,4 +1,4 @@
-package RelogioData;
+package Singleton;
 
 public class Data{
 	
