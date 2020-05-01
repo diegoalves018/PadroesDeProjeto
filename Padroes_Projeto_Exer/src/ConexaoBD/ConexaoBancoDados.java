@@ -23,9 +23,9 @@ public class ConexaoBancoDados {
     public static void main(String[] args){
         try{
             getConexao();
-            System.out.println("Banco de dados conectado com sucesso!");
+            System.out.println("BD conectado com sucesso!");
         }catch(SQLException sqlex){
-            System.out.println("Impossível se conectar ao banco de dados! "
+            System.out.println("Impossível acessar ao BD! "
                     + "ERRO: " + sqlex.getMessage());
         }
     }
