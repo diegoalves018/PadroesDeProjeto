@@ -2,8 +2,8 @@ package Adapter;
 
 public class Data {
 
-	private int dia = 31;
-	private int mes = 13;
+	private int dia = 15;
+	private int mes = 10;
 	private int ano = 2020;
 
 	public int getDia() {
