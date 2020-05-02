@@ -1,23 +1,32 @@
 package Singleton;
 
+import java.util.Calendar;
+
 public class Relogio {
-    
-    private Horario h;
-    private Data d;
-    
-    
-    /*public class Singleton {
- 
-    private static Singleton uniqueInstance;
- 
-    private Singleton() {
-    }
- 
-    public static synchronized Singleton getInstance() {
-        if (uniqueInstance == null)
-            uniqueInstance = new Singleton();
- 
-        return uniqueInstance;
-    }
-}*/
+
+	private static volatile Relogio instancia;
+
+	private Relogio() {
+
+	}
+
+	public static synchronized Relogio getInstancia() {
+		if (instancia == null) {
+			synchronized (Relogio.class) {
+				if (instancia == null) {
+					instancia = new Relogio();
+				}
+			}
+		}
+		return instancia;
+	}
+
+	public Data getData() {
+		return new Data(Calendar.getInstance());
+	}
+
+	public Horario getHorario() {
+		return new Horario(Calendar.getInstance());
+	}
+
 }
