@@ -39,6 +39,8 @@ public class DataInvertida {
 				}
 			}
 
+		} else {
+			System.out.println("Erro na data escolhida! Mês " + mes + " é inválido.");
 		}
 
 		System.out.println(ano + "/" + mes + "/" + dia);

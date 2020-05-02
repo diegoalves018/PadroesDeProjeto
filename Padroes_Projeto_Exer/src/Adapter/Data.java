@@ -3,7 +3,7 @@ package Adapter;
 public class Data {
 
 	private int dia = 31;
-	private int mes = 11;
+	private int mes = 13;
 	private int ano = 2020;
 
 	public int getDia() {
@@ -67,6 +67,8 @@ public class Data {
 				}
 			}
 
+		} else {
+			System.out.println("Erro na data escolhida! Mês " + mes + " é inválido.");
 		}
 
 		System.out.println(dia + "/" + mes + "/" + ano);
