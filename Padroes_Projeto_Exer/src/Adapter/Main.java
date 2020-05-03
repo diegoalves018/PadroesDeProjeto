@@ -1,15 +1,17 @@
 package Adapter;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
-
-		DataInvertida dt = new DataInvertida();
 		
-		Adapter adpt = new Adapter(dt);
+		Data dt = new Data ();
+		System.out.println(dt.toString());
 		
-		adpt.criarDataInvertida();
-
+		Adapter dt2 = new Adapter();
+		dt2.Data(03, 05, 2020);
+		System.out.println(dt2);	
+		
+		
+    		
 	}
-
 }

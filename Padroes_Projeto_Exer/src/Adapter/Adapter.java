@@ -1,34 +1,38 @@
 package Adapter;
 
 public class Adapter extends Data {
+		
+		public void Data(int dia, int mes, int ano){
+	    	super.setDia(dia);
+	    	super.setMes(mes);
+	    	super.setAno(ano);
+	    }
 
-	private DataInvertida dataInvertida;
+		public void setDiaMes(int dia){
+	        super.setDia(dia);
+		}
 
-	@Override
-	public int getAno() {
-		// TODO Auto-generated method stub
-		return super.getAno();
+		public void setMes(int mes){
+		    super.setMes(mes);
+		}
+
+		public void setAno(int ano){
+		    super.setAno(ano);
+		}
+
+		public byte getDia(){
+		    return super.getDia();
+		}
+
+		public byte getMes(){
+		    return super.getMes();
+		}
+
+		public short getAno(){
+		    return super.getAno();
+		}
+
+		public String toString(){
+		    return super.getAno() + "/" + super.getMes() + "/" + super.getDia();
+		}
 	}
-
-	@Override
-	public int getMes() {
-		// TODO Auto-generated method stub
-		return super.getMes();
-	}
-
-	@Override
-	public int getDia() {
-		// TODO Auto-generated method stub
-		return super.getDia();
-	}
-
-	public Adapter (DataInvertida dataInvertida) {
-		this.dataInvertida = dataInvertida;
-	}
-
-	public void criarDataInvertida() {
-
-		dataInvertida.dataInvertida(getDia(), getMes(), getAno());
-	}
-
-}
