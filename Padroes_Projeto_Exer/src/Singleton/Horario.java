@@ -23,7 +23,7 @@ public class Horario {
 		if (hora >= 0 && hora <= 23) {
 			this.hora = (byte) hora;
 		} else {
-			throw new RuntimeException("*******Hora invalida******");
+			throw new RuntimeException("Hora inválida");
 		}
 	}
 
@@ -36,7 +36,7 @@ public class Horario {
 		if (minuto >= 0 && minuto <= 59) {
 			this.minuto = (byte) minuto;
 		} else {
-			throw new RuntimeException("*******Minuto invalido******");
+			throw new RuntimeException("Minuto inválido");
 		}
 	}
 
@@ -48,7 +48,7 @@ public class Horario {
 		if (segundo >= 0 && segundo <= 59) {
 			this.segundo = (byte) segundo;
 		} else {
-			throw new RuntimeException("*******Segundo invalido******");
+			throw new RuntimeException("Segundo inválido");
 		}
 	}
 
