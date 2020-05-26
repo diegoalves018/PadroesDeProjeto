@@ -13,7 +13,7 @@ public class Principal {
 		fr2.distancia = 150;
 		Frete frete2 = new Frete(fr2);
 		
-		frete2.calcFrete();
 		frete.calcFrete();
+		frete2.calcFrete();
 	}
 }
